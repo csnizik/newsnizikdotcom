@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Snizik dot com',
   author: 'Christopher Snizik',
   headerTitle: 'Snizik dot com',
-  description: 'A blog for all of the things',
+  description: "What I don't know about what I don't know",
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://snizik.com',
