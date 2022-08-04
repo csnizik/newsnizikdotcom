@@ -7,7 +7,7 @@ summary: 'Polonius was full of garbage advice, such as this steaming lump of poo
 images: []
 ---
 
-Polonius was full of garbage advice, such as this steaming lump of poo: "To thine own self be true, and it must follow as the night the day, thou canst not then be false to any man." Besides being a rambling and awkwardly constructed sentence, this is horrible advice for developers using JavaScript, where the concepts of "true" and "false" only exist in Booleans, and everything else can be evaluated using the squishy and oft-misunderstood terms, "truthy" and "falsy".
+Polonius was full of garbage advice, such as this steaming lump of poo: "To thine own self be true, and it must follow as the night the day, thou canst not then be false to any man." Besides being a rambling and awkwardly constructed sentence, this is horrible advice for developers using JavaScript, where the concepts of "true" and "false" only exist in Booleans, and everything else can be evaluated using the squishy-sounding and oft-misunderstood terms, "truthy" and "falsy".
 
 ![Polonius giving more of his rotten advice](/static/images/polonius-javascript.png 'Polonius')
 
