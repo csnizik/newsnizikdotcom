@@ -4,6 +4,7 @@ import 'katex/dist/katex.css'
 
 import '@fontsource/inter/variable-full.css'
 import '@fontsource/cinzel/500.css'
+import '@fontsource/lato'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
