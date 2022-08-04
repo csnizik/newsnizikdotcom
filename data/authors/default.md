@@ -1,7 +1,7 @@
 ---
 name: Christopher Snizik
 avatar: /static/images/goatkiss-edited.png
-occupation: Software Engineer | Coding Bootcamp Instructor | Tulane Alum | Maker of the Perfect Omelet
+occupation: Pater Familia • Software Engineer • Coding Bootcamp Instructor • Tulane Alum • Maker of the Perfect Omelet
 company: Mandeville, LA
 email: csnizik@tulane.edu
 twitter: https://twitter.com/Twitter
