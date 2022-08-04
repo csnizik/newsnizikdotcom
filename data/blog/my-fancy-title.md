@@ -1,6 +1,6 @@
 ---
 title: My fancy title
-date: '2021-01-31'
+date: '2022-08-1'
 tags: ['hello']
 draft: true
 summary:
