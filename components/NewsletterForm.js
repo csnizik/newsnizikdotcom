@@ -61,6 +61,11 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
             } focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 dark:ring-offset-black`}
             type="submit"
             disabled={subscribed}
+            onClick={() =>
+              alert(
+                'Excellent. Expect your email inbox to receive about twice as much spam as it already gets.'
+              )
+            }
           >
             {subscribed ? 'Thank you!' : 'Sign up'}
           </button>
