@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Snizik dot com',
   author: 'Christopher Snizik',
   headerTitle: 'Snizik dot com',
-  description: "What I don't know about what I don't know",
+  description: '...it made sense in my head',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://snizik.com',
@@ -11,11 +11,11 @@ const siteMetadata = {
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'csnizik@tulane.edu',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  github: 'https://github.com/csnizik',
+  gitlab: 'https://gitlab.com/i2i',
+  twitter: 'https://twitter.com/casinnola',
+  facebook: 'https://facebook.com/csnizik',
+  linkedin: 'https://www.linkedin.com/in/christopher-snizik-aba43260/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
