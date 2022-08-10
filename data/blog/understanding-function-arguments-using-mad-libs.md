@@ -1,7 +1,5 @@
 ---
-tags:
-  - javascript
-  - basics
+tags: ['basics', 'javascript']
 draft: false
 date: 2021-01-21T16:06:10.019Z
 summary: What is wrong with this function? What is wrong with YOU?

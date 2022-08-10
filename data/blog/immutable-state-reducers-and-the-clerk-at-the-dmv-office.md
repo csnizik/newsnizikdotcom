@@ -1,9 +1,5 @@
 ---
-tags:
-  - javascript
-  - react
-  - redux
-  - ''
+tags: ['javascript', 'react', 'redux']
 draft: false
 date: 2021-01-24T22:50:00.681Z
 summary: As you progress through your journey into learning React, you will eventually come across what may seem to be a paradox, the classic question of "what happens when an unstoppable force meets an immovable object?"

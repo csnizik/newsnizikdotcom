@@ -1,9 +1,5 @@
 ---
-tags:
-  - agile
-  - react
-  - nodejs
-  - javascript
+tags: ['agile', 'react', 'nodejs', 'javascript']
 draft: false
 date: 2020-09-16T05:00:00.000Z
 summary: Just read the agile manifesto. I did, and it made me a better person.

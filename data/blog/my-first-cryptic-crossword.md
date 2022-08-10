@@ -1,9 +1,5 @@
 ---
-tags:
-  - misc
-  - puzzles
-  - games
-draft: false
+tags: ['misc', 'puzzles', 'games']
 date: 2021-03-11T00:07:00.616Z
 summary: I have been an avid reader of Games magazine (now called Games World of Puzzles) since I was a kid. I first encountered Games when I was flying somewhere with the fam and I went in an airport bookstore to pick up something to entertain myself during the flight.
 title: My first cryptic crossword

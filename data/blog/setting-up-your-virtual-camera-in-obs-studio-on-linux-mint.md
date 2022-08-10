@@ -1,9 +1,5 @@
 ---
-tags:
-  - mint
-  - meet
-  - obs
-  - zoom
+tags: ['linux mint', 'meet', 'obs studio', 'zoom']
 draft: false
 date: 2021-03-26T18:48:12.543Z
 summary: My hope is that you have found this article after having found a half dozen or so other tutorials on how to get your Virtual Camera running in OBS Studio 26 or higher on a Linux Mint 20.1 Cinnamon machine, and after following the (often conflicting) instructions on each, you still don't have your Virtual Camera running in OBS.

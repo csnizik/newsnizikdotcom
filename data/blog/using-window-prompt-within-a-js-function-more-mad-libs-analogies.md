@@ -1,7 +1,5 @@
 ---
-tags:
-  - basics
-  - javascript
+tags: ['basics', 'javascript']
 draft: false
 date: 2021-01-22T16:16:50.916Z
 summary: More obscurum about the last obscurum.

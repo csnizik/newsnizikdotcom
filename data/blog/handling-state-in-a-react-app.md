@@ -1,10 +1,5 @@
 ---
-tags:
-  - react
-  - javascript
-  - reactrouter
-  - redux
-  - apollo
+tags: ['react', 'javascript', 'reactrouter', 'redux', 'apollo']
 published: true
 date: 2020-12-10T19:40:25.657Z
 summary: My mind went blank. This was after it recovered.
