@@ -63,7 +63,10 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
             disabled={subscribed}
             onClick={() =>
               alert(
-                'Excellent. Expect your email inbox to receive about twice as much spam as it already gets.'
+                `Excellent. Expect your email inbox to receive about twice as much spam as it already gets.
+
+
+Just kidding. That button doesn't do anything.`
               )
             }
           >
