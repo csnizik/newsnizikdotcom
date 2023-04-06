@@ -2,7 +2,7 @@
 title: Plugin Types Are Like Pokémons, But For Drupal
 date: '2021-04-21'
 tags: ['drupal']
-draft: true
+draft: false
 summary: What are plugins in Drupal? In a word, awesome. In two words, really awesome. In three words...
 images: []
 layout: PostLayout
@@ -10,6 +10,9 @@ canonicalUrl:
 ---
 
 Alright, gather 'round, my coding minions. Today, we're going to talk about **Drupal plugin types**. You've probably heard of them, but let's dive deeper into the subject.
+
+![Humorous comic strip about Pokemon](/static/images/pokemonplague.png 'Pokemon Plague')
+_A plague of Pokemon_
 
 ## What the Hell Are Plugin Types?
 
