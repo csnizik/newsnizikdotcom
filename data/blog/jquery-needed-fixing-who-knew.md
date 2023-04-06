@@ -1,6 +1,6 @@
 ---
-title: jQuery Needed Fixing, Who Knew?
-date: 'Full PHP 7.4 Support in D7.71'
+title: Full PHP 7.4 Support in D7.71
+date: '2020-06-19'
 tags: ['drupal', 'jquery', 'php']
 draft: false
 summary: Drupal 7.71 release has support for PHP 7.4. Let us discuss.
