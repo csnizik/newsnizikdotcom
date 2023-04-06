@@ -11,7 +11,7 @@ canonicalUrl:
 
 Imagine a chicken, happily clucking away on a farm, just doing its chicken thing. Now, imagine that chicken suddenly decapitated - still running around, but headless. That's a bit like what we're doing with Headless Drupal (minus the animal cruelty, of course). In the world of web development, decapitating Drupal's frontend from its backend brings forth a new level of flexibility and power. Trust me, I've seen it in action, and it's nothing short of miraculous.
 
-1[Photo of a mule with the caption, the mule was the original hybrid vehicle.](/static/images/mule.png', 'Mule')
+![Photo of a mule with the caption, the mule was the original hybrid vehicle.](/static/images/mule.png', 'Mule')
 
 ## Bye Bye, Drupal's Frontend
 
