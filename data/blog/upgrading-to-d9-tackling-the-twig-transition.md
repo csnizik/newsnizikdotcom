@@ -4,9 +4,7 @@ date: '2020-08-22'
 tags: ['drupal','twig']
 draft: false
 summary: We need to discuss the transition from Twig 1 to Twig 2, which is essential to D8 => D9.
-images: []
 layout: PostLayout
-canonicalUrl:
 ---
 
 Hello, fellow Drupal fanatics! It's time to take a deep dive into the thrilling world of Twig as we move from Drupal 8 to Drupal 9. If you're already on Drupal 8, you're in luck – the update to Drupal 9 should be a breeze. However, we need to discuss the transition from Twig 1 to Twig 2, which is an essential part of the upgrade. Fear not, my friends, for most projects, the changes should be manageable. So let's dive in!
