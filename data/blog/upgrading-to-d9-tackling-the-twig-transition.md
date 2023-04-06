@@ -28,11 +28,13 @@ In Twig 2, macros imported in a file are no longer available in child templates 
 
 Silent display of undefined blocks is deprecated since version 1.29 and will throw an exception in 2.0. To address this, wrap potentially-undefined blocks in conditionals that verify they're defined before attempting to display them.
 
-```
+```twig
 {% if block('potentially-undefined-block') is defined %}
 {{ block('potentially-undefined-block') }}
-{% endif %} 3. Raw Tag and Verbatim
+{% endif %}
 ```
+
+#### 3. Raw Tag and Verbatim
 
 As of Twig 1.x, the raw tag is deprecated in favor of verbatim.
 
