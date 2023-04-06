@@ -1,6 +1,6 @@
 ---
 title: Tackling the Twig Transition
-date: '2020-08-22'
+date: 2020-08-22
 tags: ['drupal', 'twig']
 draft: false
 summary: We need to discuss the transition from Twig 1 to Twig 2, which is essential to D8 => D9.
