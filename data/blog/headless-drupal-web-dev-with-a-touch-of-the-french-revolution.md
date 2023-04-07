@@ -11,7 +11,7 @@ canonicalUrl:
 
 Imagine a chicken, happily clucking away on a farm, just doing its chicken thing. Now, imagine that chicken suddenly decapitated - still running around, but headless. That's a bit like what we're doing with Headless Drupal (minus the animal cruelty, of course). In the world of web development, decapitating Drupal's frontend from its backend brings forth a new level of flexibility and power. Trust me, I've seen it in action, and it's nothing short of miraculous.
 
-![Photo of a mule with the caption, the mule was the original hybrid vehicle.](/static/images/mule.png', 'Mule')
+![Photo of a mule with the caption, the mule was the original hybrid vehicle.](/static/images/mule.png 'Mule')
 
 ## Bye Bye, Drupal's Frontend
 
@@ -25,7 +25,7 @@ So, why would you want to decouple Drupal's backend from its frontend, anyway? W
 
 With a decoupled setup, Drupal's backend and your frontend framework of choice can evolve independently of each other. This means your frontend developers can innovate without being shackled to the limitations of Drupal's frontend. They can use the latest and greatest tools without worrying about compatibility issues. And let's face it, frontend technology moves at the speed of light - ain't nobody got time for compatibility constraints.
 
-![Photo of a Macbook next to an old typewriter](/static/images/typewriter.png, 'Typewriter vs. Mac')
+![Photo of a Macbook next to an old typewriter](/static/images/typewriter.png 'Typewriter vs. Mac')
 
 ## Headless Drupal: A Practical Example
 
