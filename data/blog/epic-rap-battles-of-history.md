@@ -104,10 +104,10 @@ _(No, ChatGPT didn't write this. I was inspired by someone on Reddit who used GP
 
 #### Strapi
 
-> Whoa what have we here? Are these two still at it?  
-> For years the tech world has been hearing that shit.  
+> Now what have we here, these two sound unhappy.
+> Stop measuring dicks, you're equally crappy.
 > I'm Strapi and scrappy, I'll beat both these grandpappies,  
-> I'm headless, I'm simple, keep my userbase happy.
+> I'm open source, headless, and my users? They're happy.
 >
 > I'm user friendly and I'm API driven  
 > Line me up with your endpoint, I'll assume my position  
