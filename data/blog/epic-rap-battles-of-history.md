@@ -31,9 +31,9 @@ _(No, ChatGPT didn't write this. I was inspired by someone on Reddit who used GP
 > Competing with me? Pfft, get the fuck out of here.
 >
 > Need an actual site? Build it on my big framework  
-> When it comes to Enterprise sites, call me Captain Kirk  
+> Cuz with Enterprise sites, I'm your Captain, James Kirk  
 > You've tried to keep up, tried to narrow my lead  
-> Now sit back, WordPress. "Mr. Scott - warp speed!"
+> Now sit back and hold on. "Mr. Scott - warp speed!"
 
 ---
 
