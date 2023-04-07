@@ -119,7 +119,7 @@ _(No, ChatGPT didn't write this. I was inspired by someone on Reddit who used GP
 > I'm fast and I'm agile and I'm the new champ  
 > Now it's time to put you two genies back in your LAMP
 >
-> So now you two mummies, give the fighting a rest  
+> So now you two relics, give the fighting a rest  
 > I'm here and it's clear that I am the best.  
 > You wanted to be headless, fine... "OFF WITH THEIR HEADS!"  
 > I'm the Red Queen, you bitches, and you are both dead.
