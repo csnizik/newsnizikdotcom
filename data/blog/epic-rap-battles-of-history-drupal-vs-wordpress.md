@@ -21,7 +21,7 @@ canonicalUrl:
 > I'm customizable for every need and desire,
 > Been here since '01, set the tech world on fire
 > Security? I got it, no shit's gettin in
-> But now /wp-admin is a hacker's best friend
+> But /wp-admin is a hacker's best friend
 >
 > Need an enterprise site? Build it on my framework
 > On the SS Enterprise, I'm your Captain, James Kirk
