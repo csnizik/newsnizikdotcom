@@ -9,7 +9,7 @@ layout: PostLayout
 canonicalUrl:
 ---
 
-_(No, ChatGPT didn't write this. I was inspired by someone on Reddit who used GPT to write an Epic Rap Battle, and I tried it, but no matter how much I tweaked the prompts I couldn't get a result I liked.)_
+_(No, ChatGPT didn't write this. I was inspired by Redditors who used GPT to write Epic Rap Battles. I tried it, but no matter how much I tweaked the prompts I couldn't get a result I liked. Their insults would stay at a pretty generic level, and GPT kept wanting to make them have some kumbaya moment at the end.)_
 
 ## Round One... BEGIN!
 
