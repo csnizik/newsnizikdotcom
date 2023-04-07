@@ -47,7 +47,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             </svg>
           </div>
         </div>
-        <ul>
+        {/* <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
@@ -84,7 +84,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               </li>
             )
           })}
-        </ul>
+        </ul> */}
       </div>
       {pagination && pagination.totalPages > 1 && !searchValue && (
         <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
