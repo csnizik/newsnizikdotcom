@@ -81,7 +81,7 @@ _(No, ChatGPT didn't write this. I was inspired by someone on Reddit who used GP
 > Got NBC Sports, Weather Channel, Lamborghini,  
 > Yep all of their websites are powered by me!  
 > You can brag all you want but we both know the truth,  
-> I'm old but I'm but I'm winning, you're just long in the tooth.
+> I'm old but I'm winning, you're just long in the tooth.
 
 ---
 
