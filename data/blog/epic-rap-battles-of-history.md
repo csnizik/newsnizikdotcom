@@ -69,7 +69,7 @@ _(No, ChatGPT didn't write this, though I was inspired by Redditors who used GPT
 > While your plugin shitshow's a goddamn liability
 >
 > Need to translate your content? Je parle français  
-> I've been WCAG compliant since '09 by the way.  
+> And I'm WCAG compliant since '09 by the way.  
 > My control panel's confusing? Sure, if you're coming from Wix.  
 > Doesn't take much brain power when you're just posting pics.
 >
