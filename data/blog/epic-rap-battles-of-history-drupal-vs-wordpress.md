@@ -111,7 +111,7 @@ canonicalUrl:
 > And I'll still be here long after you two are gone
 >
 > Confusing your users, you both do it well,
-> Serving data with your sequel, which is called GraphQL
+> I serve data with your sequel, which is called GraphQL
 > I'm fast and I'm agile and I'm the new champ
 > Now it's time to put you two genies back in your LAMP
 >
