@@ -106,7 +106,7 @@ _(No, ChatGPT didn't write this. I was inspired by someone on Reddit who used GP
 
 > Now what have we here, these two sound unhappy.  
 > Stop measuring dicks, you're equally crappy.  
-> I'm Strapi and scrappy, I'll beat both these grandpappies,  
+> I'm Strapi and scrappy, I'll beat both you grandpappies,  
 > I'm open source, headless, and my users? They're happy.
 >
 > I'm user friendly and I'm API driven  
