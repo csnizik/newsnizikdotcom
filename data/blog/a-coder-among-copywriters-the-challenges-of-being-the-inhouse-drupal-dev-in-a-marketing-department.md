@@ -9,8 +9,6 @@ layout: PostLayout
 canonicalUrl:
 ---
 
-# Going it Alone: The Challenges of Being an In-House Drupal Developer in a Marketing Department
-
 Picture this: You're the only Drupal developer in the entire department. That means you'll be managing everything related to the website on your own. Sounds fun, right? But it also means:
 
 1. **No one else to rely on**: You're the go-to person for all things Drupal, and there's no backup. If something goes wrong, you'll have to find a solution on your own. Good luck with that!
