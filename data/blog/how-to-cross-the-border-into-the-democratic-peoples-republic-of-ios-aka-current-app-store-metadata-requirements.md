@@ -3,7 +3,7 @@ tags: ['ios', 'app store']
 draft: false
 date: 2021-09-28T15:34:42.442Z
 summary: It's no secret that submitting an app to the App Store is much more difficult than submitting the same app to the Google Play Store. Trying to get your app past Apple's reviewers is a bit like trying to smuggle pizza into North Korea.
-title: 'How to cross the border into the Democratic People/'s Republic of iOS' 
+title: How to cross the border into the Democratic Peoples Republic of iOS
 subtitle: Current App Store metadata requirements
 ---
 
