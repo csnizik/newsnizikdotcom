@@ -1,5 +1,6 @@
 ---
-title: 'Array Methods: The Bouncers of Club JS'
+title: Array Methods
+subtitle: The Bouncers of Club JavaScript
 date: '2023-04-08'
 tags: ['JavaScript']
 draft: false

@@ -54,7 +54,7 @@ export default function Home({ posts }) {
                             </Link>
                           </h2>
                           {subtitle ? (
-                            <h3 className="text-xl font-bold leading-8 text-secondary-600 dark:text-secondary-400">
+                            <h3 className="text-2xl font-bold leading-8 text-secondary-600 dark:text-secondary-400">
                               {subtitle}
                             </h3>
                           ) : (

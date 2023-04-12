@@ -1,5 +1,6 @@
 ---
-title: 'Headless Drupal: Web Dev With A Touch of the French Revolution'
+title: Headless Drupal
+subtitle: Web Dev With A Touch of the French Revolution and a Side of Chicken
 date: '2022-05-06'
 tags: ['drupal']
 draft: false

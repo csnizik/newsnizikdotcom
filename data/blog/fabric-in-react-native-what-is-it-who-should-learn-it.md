@@ -1,5 +1,6 @@
 ---
-title: 'Fabric in React Native: What Is It? Who Should Learn It?'
+title: Fabric in React Native
+subtitle: What Is It? Who Should Learn It?
 date: '2023-01-11'
 tags: ['react native']
 draft: false

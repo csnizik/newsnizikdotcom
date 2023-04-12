@@ -1,5 +1,6 @@
 ---
-title: 'Epic Rap Battles of History: Drupal vs. Wordpress'
+title: Epic Rap Battles of History
+subtitle: Drupal vs. Wordpress
 date: '2023-03-06'
 tags: ['drupal', 'wordpress']
 draft: false
