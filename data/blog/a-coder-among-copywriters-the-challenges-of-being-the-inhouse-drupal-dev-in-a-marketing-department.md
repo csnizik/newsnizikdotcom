@@ -1,5 +1,6 @@
 ---
-title: 'A Coder Among Copywriters: The Challenges of Being the In-house Drupal Dev in a Marketing Department'
+title: A Coder Among Copywriters
+subtitle: The Challenges of Being the In-house Drupal Dev in a Marketing Department
 date: '2023-04-12'
 tags: ['drupal']
 draft: false
