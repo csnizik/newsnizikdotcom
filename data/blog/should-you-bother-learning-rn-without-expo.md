@@ -52,4 +52,20 @@ On the other hand, if you're new to mobile app development or have limited exper
 
 ## What Are Your App's Requirements?
 
-The requirements of your app can also play a role in whether or not you should learn React Native
+The requirements of your app can also play a role in whether or not you should learn React Native without Expo. If your app needs to make use of native features or libraries that aren't available through Expo, you'll have no choice but to work without it.
+
+However, if your app's requirements can be met using the components and libraries provided by Expo, you may find that the streamlined development process is worth the trade-offs.
+
+## Your Personal Learning Goals
+
+Another factor to consider is your personal learning goals. If you're interested in becoming a more well-rounded mobile app developer and gaining a deeper understanding of the underlying technologies, learning React Native without Expo could be a valuable experience.
+
+On the other hand, if your primary goal is to quickly build and deploy a React Native app, you might find that learning with Expo allows you to achieve that goal more efficiently.
+
+## The Verdict: It's Up to You, Really
+
+In the end, whether or not you should bother learning React Native without Expo depends on your unique situation and goals. There are pros and cons to both approaches, and what works best for one developer might not be the right choice for another.
+
+If you value greater control, flexibility, and potential performance improvements, learning React Native without Expo might be the right choice for you. However, if you prefer a more streamlined development experience and don't mind some trade-offs, learning with Expo could be the way to go.
+
+Regardless of which path you choose, React Native is a powerful framework for mobile app development, and the skills you gain will serve you well in your development journey. So, go forth, learn, and build amazing apps - with or without Expo, etc.
