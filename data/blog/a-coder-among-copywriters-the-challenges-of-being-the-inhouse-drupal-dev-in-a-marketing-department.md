@@ -81,3 +81,7 @@ You can't do everything at once, and it's important to set realistic expectation
 Being an in-house Drupal developer in a marketing department comes with its fair share of challenges. But as you adapt to your role, you'll find opportunities to grow your skills, collaborate with your marketing colleagues, and make a meaningful impact on your organization's online presence.
 
 So, are you ready to tackle the challenges head-on? Remember, as long as you're open to learning, networking, and communicating, you can thrive in this unique role. And who knows? Maybe someday, you'll look back on this experience as one of the most rewarding times of your career. I do!
+
+## One more thing
+
+If you do what I did and leave the world of being an in-house dev in favor of a career working with a dev team, don't forget that now other people can read your code comments and your commit messages, or you could embarass yourself. I'll leave it at that :)
