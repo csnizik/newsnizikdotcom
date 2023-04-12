@@ -1,6 +1,6 @@
 ---
 title: Dear jQuery, Just Go Away Already
-subtitle: An open letter to jQuery
+subtitle: An open letter to someone that I used to know
 date: '2023-03-11'
 tags: ['drupal', 'jquery', 'javascript']
 draft: false
