@@ -52,12 +52,14 @@ export default function Home({ posts }) {
                             >
                               {title}
                             </Link>
-                            {subtitle ? (
-                              <span className="text-l font-bold leading-8">{subtitle}</span>
-                            ) : (
-                              ''
-                            )}
                           </h2>
+                          {subtitle ? (
+                            <h3 className="text-l font-bold leading-8 text-secondary-600 dark:text-secondary-400">
+                              {subtitle}
+                            </h3>
+                          ) : (
+                            ''
+                          )}
                           <div className="flex flex-wrap">
                             {tags.map((tag) => (
                               <Tag key={tag} text={tag} />
