@@ -3,7 +3,7 @@ title: 'A Coder Among Copywriters: The Challenges of Being the In-house Drupal D
 date: '2023-04-12'
 tags: ['drupal']
 draft: false
-summary: For my first 6 years of working professionally with Drupal, I was the web guy in the Marketing Department of a hospital. When I moved on from that job, I went to a university, where once again I was the Drupal person in the Marketing department. In both cases, I was the only one in the room who knew what I did or how I did it.
+summary: For my first 6 years of working professionally with Drupal, I was the web guy in the Marketing Department of a hospital. When I moved on from that job, I went to a university, where for 2 more years I was the Drupal person in the Marketing department. In both cases, I was the only one in the room who knew what I did or how I did it.
 images: []
 layout: PostLayout
 canonicalUrl:
