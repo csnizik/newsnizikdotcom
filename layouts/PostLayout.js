@@ -88,7 +88,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">
                 {subtitle ? (
-                  <h2 className="text-xl font-bold leading-8 text-secondary-600 dark:text-secondary-400">
+                  <h2 className="font-bold leading-8 text-secondary-600 dark:text-secondary-400">
                     {subtitle}
                   </h2>
                 ) : (
