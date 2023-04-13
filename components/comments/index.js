@@ -25,13 +25,14 @@ const Comments = ({ frontMatter }) => {
   if (!comment || Object.keys(comment).length === 0) return <></>
   return (
     <div id="comment">
-      {siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && <GiscusComponent />}
+      {/* Uncomment this to turn comments back on. Also, set blog from private to public on github. */}
+      {/* {siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && <GiscusComponent />}
       {siteMetadata.comment && siteMetadata.comment.provider === 'utterances' && (
         <UtterancesComponent />
       )}
       {siteMetadata.comment && siteMetadata.comment.provider === 'disqus' && (
         <DisqusComponent frontMatter={frontMatter} />
-      )}
+      )} */}
     </div>
   )
 }

@@ -108,7 +108,7 @@ _(No, ChatGPT didn't write this, though I was inspired by Redditors who used GPT
 > Now what have we here, these two sound unhappy.  
 > Stop measuring dicks, you're equally crappy.  
 > I'm Strapi and scrappy, I'll beat both you grandpappies,  
-> I'm open source, headless, and my users? They're happy.
+> I'm a headless pimp daddy, my users are happy
 >
 > I'm user friendly and I'm API driven  
 > Line me up with your endpoint, I'll assume my position  
@@ -120,7 +120,7 @@ _(No, ChatGPT didn't write this, though I was inspired by Redditors who used GPT
 > I'm fast and I'm agile and I'm the new champ  
 > Now it's time to put you two genies back in your LAMP
 >
-> So now you two relics, give the fighting a rest  
-> I'm here and it's clear that I am the best.  
+> Yo Wordpress, yo Drupal, you wish you were me  
+> Instead of Tweedle Dum and his friend Tweedle Dee.  
 > You wanted to be headless, fine... "OFF WITH THEIR HEADS!"  
 > I'm the Red Queen, you bitches, and you are both dead.
