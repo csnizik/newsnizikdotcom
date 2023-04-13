@@ -45,6 +45,8 @@ core_version_requirement: ^8 || ^9
 
 Pause for a second and pat yourself on the back, because with that one file you are now a custom module builder! Yep, a `.info.yml` file is the only mandatory requirement for a module. Don't believe me? Save the file, then go to your console and type `drush en copyright_symbol`. You should get feedback of `[success] Successfully enabled: copyright_symbol`. Now go to your site's `/admin/modules` page, search for "copyright", and you'll see your new module listed. The checkbox next to it indicates that it is enabled. Click the droppdown arrow next to the description of what it does. Here's where you would see any dependencies it had plus links to its configuration settings page, if we had it.
 
+![The list of modules, with the new "copyright symbol" module listed](/static/images/copyright01.png 'copyright')
+
 _If you don't see the module listed there, try running `drush cr` to refresh your site's caches, then check again. It's pretty standard as you're developing in Drupal to run `drush cr` when you want to see your recent changes reflected on your local site; my fingers have "muscle memory"; they type `drush cr` without my brain having to get involved :)_
 
 In this one simple file, the `.info.yml` file (commonly referred to as just the "dot info file"), we've provided some basic information about our module, such as its name, type, and a brief description. We've also specified the core version requirement, indicating that our module is compatible with Drupal 9 and 10.
@@ -54,5 +56,7 @@ There are other vital pieces of info that can go into a module's "dot info file"
 Just for your own learning, try this: change the value of `package` from `Custom` to something like `Copyright Package`. Run `drush cr` and then refresh the modules page. Your change should show up. Now make a change that would actually cause a problem; change your `core_version_requirement` to a value that doesn't include the version you're running. (I'm running 10.0.7, so I changed my value to ^9). After `drush cr`, will the module be uninstalled? Try it.
 
 Nope, not uninstalled... but throwing noisy warnings that it is incompatible. So... think of your dot info file as the first place you'll think of looking when you're triaging a problem in your module.
+
+![A warning that the module is incompatible with this version of Drupal](/static/images/copyright03.png 'copyright 03')
 
 Okay, that's it for now. In the next article, we will start giving our baby module some functionality.
