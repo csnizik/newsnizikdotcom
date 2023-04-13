@@ -1,13 +1,15 @@
+import { useEffect, useState } from 'react'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
+import useInfiniteScroll from 'hooks/useInfiniteScroll'
 
 import NewsletterForm from '@/components/NewsletterForm'
 
-const MAX_DISPLAY = 15
+const INITIAL_POSTS_TO_LOAD = 5
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -15,7 +17,32 @@ export async function getStaticProps() {
   return { props: { posts } }
 }
 
+function useLazyLoadPosts(posts) {
+  const [loadedPosts, setLoadedPosts] = useState([])
+  const [hasMore, setHasMore] = useState(true)
+  const [numLoadedPosts, setNumLoadedPosts] = useState(INITIAL_POSTS_TO_LOAD)
+
+  useEffect(() => {
+    if (loadedPosts.length >= posts.length) {
+      setHasMore(false)
+      return
+    }
+    setLoadedPosts(posts.slice(0, numLoadedPosts))
+  }, [numLoadedPosts])
+
+  const loadMore = () => {
+    if (hasMore) {
+      setNumLoadedPosts((prevNumLoadedPosts) => prevNumLoadedPosts + INITIAL_POSTS_TO_LOAD)
+    }
+  }
+
+  useInfiniteScroll(loadMore)
+
+  return { loadedPosts, hasMore }
+}
+
 export default function Home({ posts }) {
+  const { loadedPosts, hasMore } = useLazyLoadPosts(posts)
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -29,8 +56,8 @@ export default function Home({ posts }) {
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+          {!loadedPosts.length && 'No posts found.'}
+          {loadedPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags, subtitle } = frontMatter
             return (
               <li key={slug} className="py-12">
@@ -87,17 +114,7 @@ export default function Home({ posts }) {
           })}
         </ul>
       </div>
-      {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="all posts"
-          >
-            All Posts &rarr;
-          </Link>
-        </div>
-      )}
+
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
