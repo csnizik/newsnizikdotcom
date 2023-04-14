@@ -12,7 +12,7 @@ canonicalUrl:
 
 One of the best parts about Drupal is the ease with which you can build your own custom functionality. If you find yourself with a custom need on your Drupal site and you can't find a contributed module that is the perfect-fitting round peg for your site's round hole, don't waste time trying to shove it in and make it fit. Roll your own; it's not that difficult if you know the important steps.
 
-In this series, I'll walk you through the steps needed to build a simple, yet handy custom module. Our module will have one primary function: whenever text is added to a node, it will scan the content for a user-defined text string. If the string is found and doesn't already have a copyright symbol after it, our module will add one. Sound hard? It's not!
+In this series, I'll walk you through the steps needed to build a simple, yet handy custom module. Our module will have one primary function: whenever text is added to a node, it will scan the content for a user-defined text string. If the string is found and doesn't already have a copyright symbol after it, our module will add one. Sound hard? It's not! (And yes, I realize this is something that could probably be more easily accomplished using a CSS `::after` pseudo-element, but this is what our client wants.)
 
 ## Setting the Stage
 
