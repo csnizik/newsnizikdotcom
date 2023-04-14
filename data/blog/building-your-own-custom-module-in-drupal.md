@@ -1,7 +1,7 @@
 ---
 title: Building Your Own Custom Module in Drupal, Part One
 subtitle: Getting started with a module that inserts copyright symbols into text
-date: '2023-04-13'
+date: '2023-04-12'
 tags: ['drupal']
 draft: false
 summary: One of the best parts about Drupal is the ease with which you can build your own custom functionality. If you find yourself with a custom need on your Drupal site and you can't find a contributed module that is the perfect-fitting round peg for your site's round hole, don't waste time trying to shove it in and make it fit. Roll your own; it's not that difficult if you know the important steps.
