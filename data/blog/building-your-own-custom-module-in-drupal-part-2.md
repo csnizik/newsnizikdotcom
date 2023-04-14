@@ -3,8 +3,8 @@ title: Building Your Own Custom Module in Drupal, Part Two
 subtitle: Building a Settings page
 date: '2023-04-13'
 tags: ['drupal']
-draft: true
-summary: In part one, we looked at the steps involved in creating an MVP of a custom module. We looked at the "dot info" file, which is what makes a module visible to your Drupal site, and we looked at the configs that are stored in it. Before we get to the actual work that our `copyright_symbol` module is going to perform, let's do a couple other setup steps.
+draft: false
+summary: In part one, we looked at the steps involved in creating an MVP of a custom module. We looked at the .info file, which is what makes a module visible to your Drupal site, and we looked at the configs that are stored in it. Before we get to the actual work that our `copyright_symbol` module is going to perform, let's do a couple other setup steps.
 images: []
 layout: PostLayout
 canonicalUrl:
