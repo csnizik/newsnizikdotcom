@@ -1,20 +1,18 @@
 ---
 title: Building Your Own Custom Module in Drupal, Part Two
-subtitle: Introducing the .module file and writing our first hook
+subtitle: Building a Settings page
 date: '2023-04-13'
 tags: ['drupal']
 draft: true
-summary: In part one, we looked at the steps involved in creating an MVP of a custom module. We looked at the "dot info" file, which is what makes a module visible to your Drupal site, and we looked at the configs that are stored in it. Now it's time to actually put some functionality into the module. We'll start with one of the basic methods in Drupal, hooks.
+summary: In part one, we looked at the steps involved in creating an MVP of a custom module. We looked at the "dot info" file, which is what makes a module visible to your Drupal site, and we looked at the configs that are stored in it. Before we get to the actual work that our `copyright_symbol` module is going to perform, let's do a couple other setup steps.
 images: []
 layout: PostLayout
 canonicalUrl:
 ---
 
-### Step 3: Building the Module Functionality
+Right now this should be the structure of your module:
 
-It's time to start coding the main functionality of our module. Right now this should be the structure of your module:
-
-```lang-none
+```shell
 └── modules
      └── custom
           └── copyright_symbol
@@ -24,100 +22,9 @@ It's time to start coding the main functionality of our module. Right now this s
                └── copyright_symbol.routing.yml
 ```
 
-So far, we've only added code to the dot info file; the other three should be empty. Open the `copyright_symbol.module` file and let's get to work.
+_If you didn't go back and undo the last change we made in Part One (setting the `core_version_requirement` so that the module is incompatible with our version of Drupal), do so now._
 
-This is commonly referred to as the "dot module" file, and it despite its lack of a `.php` extension, it's written in php. So the first line of our new file will be an opening `<?php` tag. Next, we can put a comment block that describes the purpose of the file. Looking at examples of core modules, you'll notice that the description in this comment block is usually taken verbatim from the description in the `.info` file. This is prefaced by the `@file` tag, which indicates that the file is a Drupal module.
-
-```php
-<?php
-
-/**
- * @file
- * Adds a copyright symbol to user-defined text strings in nodes.
- */
-```
-
-By the way, the formatting of this comment is intentional; it's a format call PHP DocBlocks, which are structured comments in PHP code that can give documentation for our classes, functions, properties, parameters, and... well, and our Drupal module here. They begin with `/**` and end with `*/` and they contain various `@tags` that serve as labels for the annotations we put there.
-
-First, we'll implement a hook that allows our module to interact with the node content. In Drupal, hooks are functions that allow modules to interact with various parts of the system. In this case, we'll use the `hook_node_presave()` hook, which is invoked right before a node is saved.
-
-Add the following beneath your first docblock:
-
-```php
-use Drupal\node\NodeInterface;
-```
-
-We are going to use an interface that's found in the `NodeInterface` namespace, so we need to import it. Since this is the case, we also need to make a mental note to go back to our `.info` file and list the `Node` module as a dependency. It may seem like overkill since the `Node` module is part of Drupal core, but let's get in the habit of putting all of our dependencies in `.info`, no matter how trivial it may seem.
-
-Next, we're going to implement a hook, which we'll preface with another docblock:
-
-```php
-/**
- * Implements hook_node_presave().
- *
- * Scans a node for a keyword and adds a character as required.
- */
-
-  function copyright_symbol_node_presave(NodeInterface $node) {
-  // Your code will go here.
-  }
-
-```
-
-**TODO PICK UP HERE ^^^ AND REWRITE IT TO PUT THE HELPER FUNCTION FIRST**
-Again, our docblock has an intentional pattern. If you go to the Drupal API documentation and search for any hook, you'll see that they all have this same type of docblock. Next let's add our params and return to the docblock and write the logic for scanning and updating the node content. We'll create a helper function called `add_copyright_symbol()` to handle this task. Add the following code to your `copyright_symbol.module` file:
-
-```php
-/**
- * Adds a copyright symbol to a user-defined text string in node content.
- *
- * @param string $content
- *   The content of the node.
- * @param string $search_string
- *   The user-defined text string to search for.
- *
- * @return string
- *   The updated content with the copyright symbol added.
- */
-function add_copyright_symbol(string $content, string $search_string): string {
-  // Check if the search string is present in the content and not followed by a copyright symbol.
-  if (strpos($content, $search_string) !== FALSE && strpos($content, $search_string . '©') === FALSE) {
-    // Add the copyright symbol to the search string.
-    $updated_string = $search_string . '©';
-
-    // Replace the search string with the updated string.
-    $content = str_replace($search_string, $updated_string, $content);
-  }
-
-  return $content;
-}
-```
-
-With our helper function in place, we can now call it from our `hook_node_presave()` implementation. Update the `copyright_symbol_node_presave()` function with the following code:
-
-```php
-/**
- * Implements hook_node_presave().
- */
-function copyright_symbol_node_presave(NodeInterface $node) {
-  // Load the configuration for the custom module.
-  $config = \Drupal::config('copyright_symbol.settings');
-
-  // Get the user-defined search string.
-  $search_string = $config->get('search_string');
-
-  // Process the node content with the add_copyright_symbol() function.
-  $content = $node->body->value;
-  $updated_content = add_copyright_symbol($content, $search_string);
-
-  // Update the node content with the modified content.
-  $node->body->value = $updated_content;
-}
-```
-
-At this point, our custom module can add a copyright symbol to a user-defined text string in node content. However, we still need to provide a settings page where users can configure the search string.
-
-### Step 4: Creating the Settings Page
+### Step 3: Creating a Settings Page
 
 To create the settings page, we'll need to define a route and a menu item in our `copyright_symbol.routing.yml` and `copyright_symbol.links.menu.yml` files, respectively. Add the following code to the `copyright_symbol.routing.yml` file:
 
@@ -131,19 +38,23 @@ copyright_symbol.settings:
     _permission: 'administer copyright symbol settings'
 ```
 
-This code defines a route for our settings page and specifies the form class we'll use to build the form. We'll create this form class shortly.
+This code defines a route for our settings page and specifies the form class we'll use to build the form. The value in `path` is the URL path that will point to the settings page; the value in `_form` is the form class we'll use. We haven't created it yet; we'll get to that next.
+
+Also, make a mental note of the value we put for `_permission`. Keep it in mind as we'll be coming back to that in a future tutorial.
 
 Next, create a new file named `copyright_symbol.links.menu.yml` in your module directory and add the following code:
 
 ```yaml
 copyright_symbol.settings:
-  title: 'Copyright Symbol Settings'
+  title: 'Copyright Symbol settings'
   parent: system.admin_config_content
   route_name: copyright_symbol.settings
   weight: 100
 ```
 
 This code creates a menu item for our settings page and places it under the "Content" section of the admin menu.
+
+### Step 4: Time to Build the Form Class
 
 Now, let's build the form class. Create a new directory named `Form` inside your module directory, and inside that, create a new file named `CopyrightSymbolSettingsForm.php`. Add the following code:
 
@@ -239,23 +150,43 @@ class CopyrightSymbolSettingsForm extends ConfigFormBase {
 
 The `buildForm()` method defines the form elements, including a text field for the search string and a "Scan Now" button. The `submitForm()` method saves the user-defined search string to the configuration when the form is submitted. We've also added a `scanNow()` method that processes the "Scan Now" button click. This method scans and updates all existing nodes with the copyright symbol.
 
-### Step 5: Defining Custom Permissions
+### Clear Cache and Test
 
-Finally, let's define custom permissions for our module. Open the `copyright_symbol.permissions.yml` file and add the following code:
+If you have followed everything up to this point, use `drush cr` to clear your cache; then use the new link in the Admin page, Configuration Menu > Content >
 
-```yaml
-administer copyright symbol settings:
-  title: 'Administer Copyright Symbol Settings'
-  description: 'Access and configure the Copyright Symbol module settings.'
-  restrict access: true
+Uh oh! I'm getting an error instead of my Settings page: `The website encountered an unexpected error. Please try again later.` To find out what's going on, you can run `drush watchdog:tail --severity=Error` to get a list of the most recent error messages. At the top of the list, you should see something like this:
+
+```shell
+187     14/Apr 14:54    php     Error   InvalidArgumentException: Class "\Drupal\copyright_symbol\Form\CopyrightSymbolSettingsForm" does not exist. in Drupal\Core\DependencyInjection\ClassResolver->getInstanceFromDefinition()
 ```
 
-This code defines a permission for administering the Copyright Symbol settings. You can assign this permission to users or roles through the admin interface.
+Looks like Drupal can't find our form class that we defined in step 4. Why not? To answer that, here's what my module's file structure looks like right now:
 
-### Voila
-
-We've created a custom module without much hassle. It does exactly what we need it to do and it doesn't have any bloat from functionality that someone else shoved in it. And if your needs change in the future, our custom module will be 100% extensible. There are some additional next steps that we could take with it; in a future set of posts, I'll expand on it. Check back.
-
+```shell
+└── modules
+     └── custom
+          └── copyright_symbol
+               ├── copyright_symbol.info.yml
+               ├── copyright_symbol.module
+               ├── copyright_symbol.permissions.yml
+               └── copyright_symbol.routing.yml
+                    └── Form
+                         └── CopyrightSymbolSettingsForm.php
 ```
 
+Oops, we forgot to create a `src` directory, which is where Drupal expects to find `.php` files that define new classes. Let's fix that:
+
+```shell
+└── modules
+     └── custom
+          └── copyright_symbol
+               ├── copyright_symbol.info.yml
+               ├── copyright_symbol.module
+               ├── copyright_symbol.permissions.yml
+               └── copyright_symbol.routing.yml
+                    └── src
+                         └── Form
+                              └── CopyrightSymbolSettingsForm.php
 ```
+
+... run `drush cr` again, and now you should be able to navigate to our new Settings page. So far, it doesn't do anything other than throw another error if you try to use the "Scan Now" button. Why? Because we haven't defined the function `add_copyright_symbol`, which is what we will do next.
