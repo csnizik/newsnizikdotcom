@@ -27,3 +27,13 @@ input:-webkit-autofill:focus {
 .cinzel {
   font-family: 'Cinzel', serif;
 }
+
+.squirting-input {
+  position: relative;
+  transition: transform 0.4s ease-out;
+  z-index: 9999;
+}
+
+.squirting-input.squirt {
+  transform: translate3d(var(--tx), var(--ty), 0);
+}

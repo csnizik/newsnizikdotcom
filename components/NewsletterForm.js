@@ -1,8 +1,20 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
+import { onInputFocus } from '../scripts/elusive-element'
 
 import siteMetadata from '@/data/siteMetadata'
 
 const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
+  useEffect(() => {
+    const squirtingInput = inputEl.current
+    const handleInputFocus = onInputFocus(squirtingInput)
+
+    squirtingInput.addEventListener('focus', handleInputFocus)
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      squirtingInput.removeEventListener('focus', handleInputFocus)
+    }
+  }, [])
   const inputEl = useRef(null)
   const [error, setError] = useState(false)
   const [message, setMessage] = useState('')
@@ -44,7 +56,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
           </label>
           <input
             autoComplete="email"
-            className="w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-black"
+            className="squirting-input w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-black"
             id="email-input"
             name="email"
             placeholder={subscribed ? "You're subscribed !  🎉" : 'Enter your email'}
