@@ -121,6 +121,6 @@ _(No, ChatGPT didn't write this, though I was inspired by Redditors who used GPT
 > Now it's time to put you two genies back in your LAMP
 >
 > Yo Wordpress, yo Drupal, you wish you were me  
-> Instead of Tweedle Dum and his friend Tweedle Dee.  
+> Instead you're Tweedle Dum and his friend Tweedle Dee.  
 > You wanted to be headless, fine... "OFF WITH THEIR HEADS!"  
 > I'm the Red Queen, you bitches, and you are both dead.
