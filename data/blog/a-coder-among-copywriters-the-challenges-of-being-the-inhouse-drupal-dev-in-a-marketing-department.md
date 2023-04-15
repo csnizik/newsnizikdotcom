@@ -1,7 +1,7 @@
 ---
 title: A Coder Among Copywriters
 subtitle: The Challenges of Being the In-house Drupal Dev in a Marketing Department
-date: '2023-04-9'
+date: '2023-04-04'
 tags: ['drupal']
 draft: false
 summary: For my first 6 years of working professionally with Drupal, I was the web guy in the Marketing Department of a hospital. When I moved on from that job, I went to a university, where for 2 more years I was the Drupal person in the Marketing department. In both cases, I was the only one in the room who knew what I did or how I did it.

@@ -1,7 +1,7 @@
 ---
 title: Building Your Own Custom Module in Drupal, Part Three
 subtitle: 'Your .module file: giving your hooks a home'
-date: '2023-04-14'
+date: '2023-04-15'
 tags: ['drupal']
 draft: false
 summary: 'We added a Settings page where we can set a search string to use, so now we want to start adding functionality to our module. We are going to need to interact with node content, and Drupal gives us a resource to use for interacting with various parts of the system: Hooks.'
