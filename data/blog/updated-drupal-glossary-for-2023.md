@@ -1,9 +1,10 @@
 ---
-title: Updated Drupal Glossary for 2023
+title: Drupal Glossary
+subtitle: Unlocking the mysteries of DrupalSpeak
 date: '2023-04-18'
 tags: ['drupal', 'basics']
 draft: false
-summary:
+summary: A Drupal Glossary that will elevate your vocabulary from giberrish to genius.
 images: []
 layout: PostLayout
 canonicalUrl:
