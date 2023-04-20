@@ -1,7 +1,7 @@
 ---
 title: Atomic Design in Drupal
 subtitle: The Challenges of Being the In-house Drupal Dev in a Marketing Department
-date: '2023-04-04'
+date: '2023-04-20'
 tags: ['drupal']
 draft: false
 summary: Organisms, molecules, atoms. If 'chemistry' is the only thing you're thinking about when you hear those terms, perhaps you've never heard of Atomic Design, an approach to systematic component design introduced by Brad Frost in 2015. Atomic Design is a living methodology; it is still alive and evolving 8 years later. How does it fit into a Drupal 10 project?
