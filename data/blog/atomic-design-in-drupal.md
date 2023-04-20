@@ -39,6 +39,6 @@ Back when I first heard of Atomic Design, there were a couple of contrib themes 
 - Pattern Lab: Supported pattern libraries and design systems.
 - Emulsify: A Drupal theme that integrated with Pattern Lab and supported Atomic Design out of the box.
 
-Today we're in this transitional phase where Drupal is actually advancing through versions a little bit faster than the Drupal world is accustomed to. If you want to incorporate Atomic Design and Storybook in a Drupal 9/10 site, you'll pretty much have to roll it yourself. (If I'm wrong and anyone knows of a D10 project that is doing this, please let me know in the comments or [email me](mailto:csnizik@tulane.edu?subject=Atomic%20Design%20Article%20%on%20snizik.com).)
+Today we're in this transitional phase where Drupal is actually advancing through versions a little bit faster than the Drupal world is accustomed to. If you want to incorporate Atomic Design and Storybook in a Drupal 9/10 site, you'll pretty much have to roll it yourself. (If I'm wrong and anyone knows of a D10 project that is doing this, please let me know in the comments or [email me](mailto:csnizik@tulane.edu?subject=Atomic%20Design%20Article%20on%20snizik.com).)
 
 So... that's where I will leave it for now. Incorporating Atomic Design in Drupal can be a game-changer, but it's going to take a little bit of work to get it into a D9/10 site. I'll write more about it in a future post.
