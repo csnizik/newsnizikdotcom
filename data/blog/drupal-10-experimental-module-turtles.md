@@ -1,7 +1,7 @@
 ---
 title: 'Drupal 10.1.0 Experimental Module: Turtles, All The Way Down'
 date: '2023-04-26'
-tags: ['drupal drupal10 theming']
+tags: ['drupal', 'drupal10', 'theming']
 draft: false
 summary: Yawn... a new way of creating a module is coming to D10. Put everything in one folder. I am supposed to be excited by this and see it as the best thing since JavaScript taught us that `typeof null` is `'object'` (wait what?)
 images: []
