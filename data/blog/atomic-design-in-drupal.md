@@ -1,6 +1,6 @@
 ---
 title: Atomic Design in Drupal
-subtitle: The Challenges of Being the In-house Drupal Dev in a Marketing Department
+subtitle: The Challenges of Remembering to Change the Subtitle of an Article When Using a Previous Article as a Template
 date: '2023-04-20'
 tags: ['drupal']
 draft: false
