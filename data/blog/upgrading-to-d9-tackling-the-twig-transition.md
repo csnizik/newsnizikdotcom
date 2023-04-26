@@ -1,6 +1,5 @@
 ---
 title: Upgrading to D9
-subtitle: Tackling the Twig Transition
 date: '2020-08-22'
 tags: ['drupal', 'twig']
 draft: false
