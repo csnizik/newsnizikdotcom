@@ -1,6 +1,6 @@
 ---
 title: "Dante's Eighth Circle: Expo Dependencies"
-subtitle: Abandon hope. all ye who enter
+subtitle: Abandon hope, all ye who enter
 date: '2023-04-28'
 tags: ['react', 'reactnative', 'expo']
 draft: false
