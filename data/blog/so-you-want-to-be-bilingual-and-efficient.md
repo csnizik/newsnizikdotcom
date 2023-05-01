@@ -4,30 +4,54 @@ subtitle: My personal tips and tricks for smoothly transitioning from JS to PHP 
 date: '2023-04-30'
 tags: ['javascript', 'php', 'basics']
 draft: false
-summary: Taking a look at some of the key differences between PHP and JavaScript that developers with an advanced JavaScript background should be aware of, plus some optimal strategies for transitioning from one to the other and back while still remaining productive (and sane).
+summary: I fell in love with programming in the early 80s with a language called BASIC (Beginner's All-purpose Symbolic Instruction Code). It was easy to learn, using line numbers and a strictly procedural flow, and it was the default language on several computers of that time. My first was a Commodore VIC-20, followed by a Commodore 64, and on those two machines I became fluent in my first programming language.
 images: []
 layout: PostLayout
 ---
 
-As a developer with a strong JavaScript background, you might be considering learning PHP. In this blog post, we will discuss the key differences between PHP and JavaScript, offer valuable tips and tricks, explore useful tools and frameworks, and cover strategies for handling asynchronous tasks in PHP.
+I fell in love with programming in the early 80s with a language called BASIC (Beginner's All-purpose Symbolic Instruction Code). It was easy to learn, using line numbers and a strictly procedural flow, and it was the default language on several computers of that time. My first was a Commodore VIC-20, followed by a Commodore 64, and on those two machines I became fluent in my first programming language.
+
+Some time in the early 90s, Visual Basic came out and I played with it as a hobby. But I didn't follow Visual Basic all the way to its evolution into .NET, because some time in the 90s I discovered HTML and began learning web development. By the late 90s I had discovered PHP for server-side programming, which would then return customized HTML to the browser.
+
+My next lingual diversion was into MySQL, which was an essential component of LAMP stacks that were becoming the de facto way to do web development. From there, I learned JavaScript, which I originally saw as just an interesting diversion that probably wouldn't ever catch on. Eventually, JS and PHP became my top two programming languages, with a few side trips into Python and Ruby along the way.
+
+From the first time I pivoted from working in one language to working in another, my brain struggled with context switching. If, at any given time, I was fully involved in a JS project that I had been working on for a few months, you could ask me to write the simplest function using PHP and for a few minutes, my brain would pretty much go on strike.
+
+Now that I am at a point in my career where I work with a pretty balanced combo of PHP and JS, I thought it might help any readers (and me) to do a quick recap of some things that a JS dev needs to keep in mind when jumping from a JS project into PHP.
+
+<aside>
+  <p><strong>Some old school BASIC</strong></p>
+  <p><em>Calculate and print the first 10 Fibonacci numbers</em></p>
+   10 LET A = 0<br />
+   20 LET B = 1<br />
+   30 PRINT A<br />
+   40 PRINT B<br />
+   50 FOR I = 1 TO 8<br />
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60 LET C = A + B<br />
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70 PRINT C<br />
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80 LET A = B<br />
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90 LET B = C<br />
+   100 NEXT I<br />
+   110 END
+</aside>
 
 ## Key Differences between PHP and JavaScript
 
 Before diving into PHP, it's crucial to understand the primary differences between PHP and JavaScript:
 
-1. **Server-side vs. client-side**: PHP is a server-side language, while JavaScript is primarily a client-side language. This means that PHP runs on the server and generates HTML, which is then sent to the browser. In contrast, JavaScript runs directly in the browser, allowing for dynamic content and interactivity.
+**Server-side vs. client-side**: PHP is a server-side language, while JavaScript is primarily a client-side language. This means that PHP runs on the server and generates HTML, which is then sent to the browser. In contrast, JavaScript runs directly in the browser, allowing for dynamic content and interactivity.
 
-2. **Syntax**: While both PHP and JavaScript share some similarities in syntax (such as using curly braces for code blocks and semicolons to separate statements), there are differences in the way variables are declared, how functions are defined, and how arrays and objects are handled.
+**Syntax**: While both PHP and JavaScript share some similarities in syntax (such as using curly braces for code blocks and semicolons to separate statements, which are optional in JS but mandatory in PHP), there are differences in the way variables are declared, how functions are defined, and how arrays and objects are handled.
 
-3. **Concurrency model**: JavaScript uses an event-driven, non-blocking I/O model, while PHP uses a more traditional, synchronous model. This impacts how developers handle asynchronous tasks in each language.
+**Concurrency model**: JavaScript uses an event-driven, non-blocking I/O model, while PHP uses a more traditional, synchronous model. This impacts how developers handle asynchronous tasks in each language.
 
 ## PHP Tips and Tricks for JavaScript Developers
 
-Here are some PHP tips and tricks that can be particularly helpful for developers with a JavaScript background:
+Here are some PHP tips and tricks that can be particularly helpful for developers switching from a JS mindset:
 
 ### Variable declaration
 
-In PHP, variables are declared with a dollar sign (`$`) before the variable name. Also, PHP is loosely typed, which means you don't need to specify a variable's data type when declaring it.
+In PHP, variables are declared with a dollar sign (`$`) before the variable name. (To this day, my brain still sometimes reads PHP variable names as "string such-and-such"; i.e. for a variable `$time`, my brain sees it and wants to call it "string 'Time'", which as best as I can remember is a holdover from BASIC.)
 
 ```php
 $number = 42;
