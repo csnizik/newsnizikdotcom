@@ -23,7 +23,7 @@ Now that I am at a point in my career where I work with a pretty balanced combo 
 
   <h3>Some old school BASIC</h3>
   <p><em>Calculate and print the first 10 Fibonacci numbers</em></p>
-  <code class="text-xs font-mono bg-gray-800 p-2 rounded text-gray-100">
+  <code class="text-xs font-mono">
    10 LET A = 0<br />
    20 LET B = 1<br />
    30 PRINT A<br />
