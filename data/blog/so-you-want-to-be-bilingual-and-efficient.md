@@ -19,7 +19,7 @@ From the first time I pivoted from working in one language to working in another
 
 Now that I am at a point in my career where I work with a pretty balanced combo of PHP and JS, I thought it might help any readers (and me) to do a quick recap of some things that a JS dev needs to keep in mind when jumping from a JS project into PHP.
 
-<aside class="md:w-1/2 md:float-left w-full bg-gray-100 text-gray-800 px-4 py-2 mb-4 leading-normal tracking-wider">
+<aside class="md:w-1/2 md:float-left w-full px-4 py-2 mb-4 leading-normal tracking-wider">
 
   <h3 style="color: maroon!important;">Some old school BASIC</h3>
   <p><em>Calculate and print the first 10 Fibonacci numbers</em></p>
