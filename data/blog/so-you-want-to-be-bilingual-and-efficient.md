@@ -19,9 +19,11 @@ From the first time I pivoted from working in one language to working in another
 
 Now that I am at a point in my career where I work with a pretty balanced combo of PHP and JS, I thought it might help any readers (and me) to do a quick recap of some things that a JS dev needs to keep in mind when jumping from a JS project into PHP.
 
-<aside>
+<aside class="lg:w-1/3 lg:float-left w-full bg-gray-100 text-gray-800 px-4 py-2 mb-4 leading-normal tracking-wider">
+
   <p><strong>Some old school BASIC</strong></p>
   <p><em>Calculate and print the first 10 Fibonacci numbers</em></p>
+  <code class="text-xs font-mono bg-gray-200 p-2 rounded">
    10 LET A = 0<br />
    20 LET B = 1<br />
    30 PRINT A<br />
@@ -33,6 +35,8 @@ Now that I am at a point in my career where I work with a pretty balanced combo 
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90 LET B = C<br />
    100 NEXT I<br />
    110 END
+  </code>
+  <p>Still rocking it after all these years :)</p>
 </aside>
 
 ## Key Differences between PHP and JavaScript
