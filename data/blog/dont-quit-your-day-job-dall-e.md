@@ -12,7 +12,7 @@ canonicalUrl:
 
 In case you're not familiar with the original movie poster from 1958 (which I have always thought was one of the most amazing movie posters of all time), here it is:
 
-![Attack of the 50 ft Woman, original poster](/assets/50footwoman.jpg)
+![Attack of the 50 ft Woman, original poster](/static/images/50footwoman.jpg)
 
 Now, before I asked DALL-E to render a parody of the poster, I needed to ensure that ChatGPT (which powers DALL-E) possessed a good understanding of what the original poster looked like.
 
@@ -50,7 +50,7 @@ If you haven't used DALL-E yet, it gives you four attempts at fulfilling your re
 
 ### "TRUK THIE THE A ACK"
 
-![Attack of the 50 ft Teletubby, take one](/assets/teletubby01.png)
+![Attack of the 50 ft Teletubby, take one](/static/images/teletubby01.png)
 
 I'm immediately realizing that I'll have to go back and add my own movie title. But, ignoring the caption that only has one English language word (two if you count 'A'), I'm a little disappointed in the image. I'm looking at the 50 ft. Teletubby and, well, I'm just not seeing Teletubby there. I guess the pose is a little bit like the weird dancing they do, but overall it looks more like a cross between the Pillsbury Dough Boy and a voodoo doll. **Thumb down**
 
@@ -60,7 +60,7 @@ I'm immediately realizing that I'll have to go back and add my own movie title. 
 
 ### "ATACK TOLDA THE TKY"
 
-![Attack of the 50 ft Teletubby, take two](/assets/teletubby02.png)
+![Attack of the 50 ft Teletubby, take two](/static/images/teletubby02.png)
 
 Once again, I realize the mistake of expecting a title on my movie poster. (There's a subtitle on this one but, unlike the previous two title attempts, this one doesn't appear to have any recognizable words.) The overpass has no people running in terror, but there's a greater volume of traffic. Although to be fair, every car seems to already be in pretty rough shape even without the Teletubby's help. As for the 50 ft Teletubby, I don't really know what to say. And I can't tell for sure if that's a vehicle between its legs or if the AI took the whole "Tinky Winky" part a little too far. Either way, this is not what I had in mind. **Thumb down**
 
@@ -70,7 +70,7 @@ Once again, I realize the mistake of expecting a title on my movie poster. (Ther
 
 ### "TACA THE ABTAY: 40 THE THE TRCKE"
 
-![Attack of the 50 ft Teletubby, take three](/assets/teletubby03.png)
+![Attack of the 50 ft Teletubby, take three](/static/images/teletubby03.png)
 
 Thankfully, Tinky Winky isn't swinging its dinky this time, but it looks to be in trouble. I'm sure walking on an elevated expressway is fraught with peril, including the risk that you'll slip and fall. And even if the movie plot eventually has 50 ft Tink going down, I don't think that's the right message for the movie poster. And I don't remember the Teletubbies having two sets of eyes and requiring a bra. **Thumb down**
 
@@ -80,6 +80,6 @@ Thankfully, Tinky Winky isn't swinging its dinky this time, but it looks to be i
 
 ### "THE OF ATTACK"
 
-![Attack of the 50 ft Teletubby, take four](/assets/teletubby04.png)
+![Attack of the 50 ft Teletubby, take four](/static/images/teletubby04.png)
 
 Finally I can read the entire title. "The Of Attack" indeed! And in the spirit of "less is more", I love the fact that we don't have to look at Tinky Winky's face this time. The sense of mayhem is a little more prominent here, especially with the car that is floating in mid-air beneath... something yellow. We also have what appear to be two terrified citizens (or at least I think the two purple things in the foreground are meant to be people; though I suppose they might be mini Tinky Winkys?) Overall, I guess this one will be my choice for the best of the four. **Thumb sideways**
