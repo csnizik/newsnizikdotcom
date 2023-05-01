@@ -21,7 +21,7 @@ Now that I am at a point in my career where I work with a pretty balanced combo 
 
 <aside class="md:w-1/2 md:float-left w-full bg-gray-100 text-gray-800 px-4 py-2 mb-4 leading-normal tracking-wider">
 
-  <h3 class="text-blue-800">Some old school BASIC</h3>
+  <h3 style="color: maroon!important;">Some old school BASIC</h3>
   <p><em>Calculate and print the first 10 Fibonacci numbers</em></p>
   <code class="text-xs font-mono">
    10 LET A = 0<br />
