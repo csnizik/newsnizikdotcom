@@ -1,10 +1,10 @@
 ---
 title: 'Hip Hip Array! (Part One)'
-subtitle: Some techniques for dealing with associative arrays from someone who pretty much hates using associative arrays
+subtitle: Some techniques for dealing with associative arrays, including an improvement that comes with PHP ^8.0.0
 date: '2023-05-11'
 tags: ['PHP']
 draft: false
-summary: Associative arrays are clunky, especially when you compare them to JavaScript objects, which you probably shouldn't do. And even moreso when you compare them to JS's Map object, which you definitely shouldn't do. But I decided to see how well I could unclunkify them.
+summary: What was originally planned to be a quick rundown of array methods in PHP has morphed into a deeper assessment of the array_multisort method in PHP 8.
 images: []
 layout: PostLayout
 canonicalUrl:
