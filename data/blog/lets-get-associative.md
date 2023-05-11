@@ -30,7 +30,7 @@ array_map(?callable $callback, array $array, array ...$arrays): array
 
 Iteration is the heart of coding and one of the core ways to keep your code DRY, and mapping over arrays is essential.
 
-## `array_multisort`
+### `array_multisort`
 
 > **`array_multisort()`** can be used to sort several arrays at once, or a multi-dimensional array by one or more dimensions. Associative (string) keys will be maintained, but numeric keys will be re-indexed.
 
