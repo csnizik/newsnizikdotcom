@@ -78,4 +78,4 @@ The syntax rules for creating a new namespace are very straightforward:
    }
    ```
 
-Those are some of the basics of namespacing. And the beauty of namespaces are: if you don't want to use them, fine! They don't affect any existing code in any way, so if you want to leave them out, you can.
+Those are some of the basics of namespacing. And one of the beauties of them is: if you don't want to use them, fine! They don't affect any existing code in any way, so if you want to leave them out, you can.
