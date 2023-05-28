@@ -1,6 +1,6 @@
 ---
 title: Fine Tuning Your Permissions in Drupal
-subtitle: You can get as granular as you need, usually without any custom modules
+subtitle: You can get as granular as you need, often without any custom modules
 date: '2023-05-27'
 tags: ['php', 'drupal']
 draft: false
