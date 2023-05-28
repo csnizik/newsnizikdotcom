@@ -75,7 +75,7 @@ The additional permissions they get OOB are:
   - Administer
   - Create
   - Edit
-- Use the administration pages and help[^3]
+- Use the administration pages and help
 - View the administration theme [^3]
 - Taxonomy
   - Tags: Create terms
@@ -121,4 +121,4 @@ With enough planning and ingenuity, many users are abl to extend their permissio
 
 [^1]: Oddly, an OOB install also gives anonymous users one permission that is not given to "authenticated" or "content editor" roles: "use the Restricted HTML text format", which includes an ominous sounding warning in the description that this permission may have security implications. Why is it given to anonymous users, who aren't given any OOB permissions that would let them use a text editor? One of the mysteries of Drupal.
 [^2]: Role permissions are not additive. If a role is to have the same permission as another role, that permission must be explicitly granted to each role.
-[^3]: These two permissions can sometimes throw new Drupal admins off when, for example, they create a new role and give it permisssions that involve using the administrator pages. If they do not explicitly grant permission to view the administration pages and use the administration theme (if one is being used), they will either not be able to access the admin pages at all, or they will experience the administration section with the same theme as is used on the public-facing front end. This is not necessarily a bad thing... maybe it's what you actually want. But it's something admins need to be aware of when, for example, they are giving a new user instructions on how to use certain features... the user may not see that feature in the format that the admin is assuming they do.
+[^3]: These two permissions ("Use the administration pages and help" and "View the administration theme") can sometimes throw new Drupal admins off when, for example, they create a new role and give it permisssions that involve using the administrator pages. If they do not explicitly grant permission to view the administration pages and use the administration theme (if one is being used), they will either not be able to access the admin pages at all, or they will experience the administration section with the same theme as is used on the public-facing front end. This is not necessarily a bad thing... maybe it's what you actually want. But it's something admins need to be aware of when, for example, they are giving a new user instructions on how to use certain features... the user may not see that feature in the format that the admin is assuming they do.
