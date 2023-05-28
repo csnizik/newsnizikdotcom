@@ -94,11 +94,13 @@ Even if the `/admin/peopls/permissions` page was all a site admin had access to,
 ### Views
 
 Each view (and each display within a view) has an "access" setting where you can choose whether this access to this view/display should be controlled by a specific permission or a specific role, or should be unrestricted.
+
 ![The access setting that is available within each display and view](/static/images/perms01.png)
 
 ### Blocks
 
 Each block can be designated as "not restricted", or can be assigned to specific roles. Go to the list of blocks `admin/structure/block`, then on the block you want to modify click 'Configure'. This will give you a page where you can decide how to restrict access to this specific block.
+
 ![The role-based visibility setting that is available within each block](/static/images/perms01.png)
 
 Look closely at that screenshot and you will see two additional ways that blocks can have their visibility restricted: by page and by content type.
