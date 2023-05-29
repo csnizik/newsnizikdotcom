@@ -3,13 +3,13 @@ title: Power Permissioning Without Leaving Drupal Core
 subtitle: Taking the next step in setting up a customized multi-tiered permission system in Drupal 10
 date: '2023-05-28'
 tags: ['php', 'drupal']
-draft: fals
-summary: Building on Drupal Core's OOB permission options from the last article, let's go a little further this time. But let's stay in the Core box and look at a combination of modules that are included in Drupal 10 Core, but which are not enabled in an OOB install - Content Moderation and Workflows.
+draft: false
+summary: Building on Drupal Core's OOTB permission options from the last article, let's go a little further this time. But let's stay in the Core box and look at a combination of modules that are included in Drupal 10 Core, but which are not enabled in an OOTB install - Content Moderation and Workflows.
 images: []
 layout: PostLayout
 ---
 
-Building on Drupal Core's OOB permission options from the last article, let's go a little further this time. But let's stay in the Core box and look at a combination of modules that are included in Drupal 10 Core, but which are not enabled in an OOB install - Content Moderation and Workflows. When combined, these two Core modules can be pretty powerful in managing your site's content flow.
+Building on Drupal Core's OOTB permission options from the last article, let's go a little further this time. But let's stay in the Core box and look at a combination of modules that are included in Drupal 10 Core, but which are not enabled in an OOTB install - Content Moderation and Workflows. When combined, these two Core modules can be pretty powerful in managing your site's content flow.
 
 ## The short answer to "What do they do?"
 
@@ -31,7 +31,7 @@ Since Content Moderation is already in Core, it's the easiest way to get up and 
 
 If you have both modules enabled, when you visit `/admin/config/workflow/workflows`, you'll see that you now have a new Wworkflow called "Editorial". Looking at this workflow reveals that it consists of three states: "Draft", "Published" and "Archived". Pretty standard stuff so far.
 
-In addition to the states, it also defines some transitions between various states. The OOB module has these transitions:
+In addition to the states, it also defines some transitions between various states. The OOTB module has these transitions:
 
 - **Create New Draft** - transition from either Draft or Published to Draft
   - In other words, create a new revision of an existing node that is either in Draft or Published state
@@ -46,7 +46,7 @@ In addition to the states, it also defines some transitions between various stat
 
 ## What does this have to do with advanced permissions?
 
-Just using this OOB setup, we're able to make progress in our quest for tiered permissions. The Content Moderation module adds these permissions, which can be set however you need:
+Just using this OOTB setup, we're able to make progress in our quest for tiered permissions. The Content Moderation module adds these permissions, which can be set however you need:
 
 - **Editorial workflow: Use Archive transition** - Move content from Published state to Archived state
 - **Editorial workflow: Use Create New Draft transition** - Move content from Draft, Published states to Draft state.

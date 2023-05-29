@@ -11,7 +11,7 @@ layout: PostLayout
 
 One of Drupal's strengths is its permissioning system. Out of the box, you can set up a tiered permission system pretty easily with, for example, authors, editors, approvers, and of course anonymous users who can read the site and not much else.
 
-But what if you need a more complex permission system than what you can do with OOB Drupal? Just how granular can you get? I'll try to show some realistic examples, and let's see how far we can go before we need to bring in some custom code in our own module.
+But what if you need a more complex permission system than what you can do with OOTB Drupal? Just how granular can you get? I'll try to show some realistic examples, and let's see how far we can go before we need to bring in some custom code in our own module.
 
 ## The basics: "What's in the box?"
 
@@ -19,11 +19,11 @@ But what if you need a more complex permission system than what you can do with 
 
 Let's start out with the tools that come in a basic Drupal installation. These are found at `/admin/people/permissions`.
 
-## Default roles and their OOB permissions
+## Default roles and their OOTB permissions
 
 ### Anonymous user
 
-As described above, an anonymous user is a user who has not been authenticated. The OOB permissions for them include:
+As described above, an anonymous user is a user who has not been authenticated. The OOTB permissions for them include:
 
 - view comments
 - use the site-wide contact form
@@ -34,7 +34,7 @@ As described above, an anonymous user is a user who has not been authenticated. 
 
 ### Authenticated user
 
-One step up from anonymous users are authenticated users. OOB permissions for them are (in addition to those already listed above for anonymous users[^2])
+One step up from anonymous users are authenticated users. OOTB permissions for them are (in addition to those already listed above for anonymous users[^2])
 
 - post comments
 - skip comment approval
@@ -56,7 +56,7 @@ Content editors have some permissions that are "locked in", iow they can't be tu
 - Use search
 - Use shortcuts
 
-The additional permissions they get OOB are:
+The additional permissions they get OOTB are:
 
 - Edit own comments
 - Use contextual links
@@ -85,11 +85,11 @@ The additional permissions they get OOB are:
 
 ### Administrators
 
-Admins, of course, get godlike permissions. Every permission that is available is irrevokably granted to the administrator role, and the OOB `user/1` is given this role. Administrator role can be added to users other than `user/1` and they too will have irrevocable omnipotence.[^4]
+Admins, of course, get godlike permissions. Every permission that is available is irrevokably granted to the administrator role, and the OOTB `user/1` is given this role. Administrator role can be added to users other than `user/1` and they too will have irrevocable omnipotence.[^4]
 
 ## Lesser-known (but powerful) permission controls
 
-Even if the `/admin/peopls/permissions` page was all a site admin had access to, they would still be in pretty good shape. But fortunately (and unbeknownst to many a Drupal user) there are more ways to enact granular levels of permission using just an OOB installation.
+Even if the `/admin/peopls/permissions` page was all a site admin had access to, they would still be in pretty good shape. But fortunately (and unbeknownst to many a Drupal user) there are more ways to enact granular levels of permission using just an OOTB installation.
 
 ### Views
 
@@ -115,13 +115,13 @@ We saw that admins can control access to private files in `/admin/people/permiss
 
 ### Content types
 
-We already saw the overarching permissions for the OOB content types ("Basic page" and "Article") in `/admin/people/permissions`. Each new content type that you create can likewise have granular permissions set for basic CRUD operations.
+We already saw the overarching permissions for the OOTB content types ("Basic page" and "Article") in `/admin/people/permissions`. Each new content type that you create can likewise have granular permissions set for basic CRUD operations.
 
-## Roll your own in an OOB install
+## Roll your own in an OOTB install
 
-With enough planning and ingenuity, many users are abl to extend their permissions to cover a full gamut of scenarios using only the OOB options. But what if you need more? Should you automatically start going off the Drupal script and hacking out some clever PHP solution? Please not! In the next article I'll start showing some contrib solutions I've found helpful.
+With enough planning and ingenuity, many users are abl to extend their permissions to cover a full gamut of scenarios using only the OOTB options. But what if you need more? Should you automatically start going off the Drupal script and hacking out some clever PHP solution? Please not! In the next article I'll start showing some contrib solutions I've found helpful.
 
-[^1]: Oddly, an OOB install also gives anonymous users one permission that is not given to "authenticated" or "content editor" roles: "use the Restricted HTML text format", which includes an ominous sounding warning in the description that this permission may have security implications. Why is it given to anonymous users, who aren't given any OOB permissions that would let them use a text editor? One of the mysteries of Drupal.
+[^1]: Oddly, an OOTB install also gives anonymous users one permission that is not given to "authenticated" or "content editor" roles: "use the Restricted HTML text format", which includes an ominous sounding warning in the description that this permission may have security implications. Why is it given to anonymous users, who aren't given any OOTB permissions that would let them use a text editor? One of the mysteries of Drupal.
 [^2]: Role permissions are not additive. If a role is to have the same permission as another role, that permission must be explicitly granted to each role.
 [^3]: These two permissions ("Use the administration pages and help" and "View the administration theme") can sometimes throw new Drupal admins off when, for example, they create a new role and give it permisssions that involve using the administrator pages. If they do not explicitly grant permission to view the administration pages and use the administration theme (if one is being used), they will either not be able to access the admin pages at all, or they will experience the administration section with the same theme as is used on the public-facing front end. This is not necessarily a bad thing... maybe it's what you actually want. But it's something admins need to be aware of when, for example, they are giving a new user instructions on how to use certain features... the user may not see that feature in the format that the admin is assuming they do.
 [^4]: Yes, it is entirely possible for you to get kicked out of your own site by a user who you granted "Administrator" access to. So be careful with this one. It's usually not a bad idea to create a new role for your other admins, one that prevents them from pulling a Brutus on your Julius Caesar.
