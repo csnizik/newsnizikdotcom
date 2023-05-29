@@ -1,6 +1,6 @@
 ---
 title: Coding in the Name Of...
-subtitle: Using PHP Namespaces to Tame Your Code
+subtitle: Using PHP namespaces to tame your code
 date: '2023-05-18'
 tags: ['php']
 draft: false
