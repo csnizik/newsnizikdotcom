@@ -51,7 +51,7 @@ Here's a quick overview of the website's structure.
 
 We need to add a few fields to our user nodes: users with the **Distributor** role need to be able to view and edit the list of **Wholesaler** users they are responsible for; and conversely each **Distributor** needs to be able to see which **Wholesaler** they report to.
 
-But right away I see a problem with the OOTB configuration: on the Manage Fields page (`/admin/config/people/accounts/fields`) I can add fields... but any fields I add will be attached to _all users_. This is not ideal, and without a way of limiting field visibility it would create a mess: **Distributor** users would have a field called "My Distributors", which they shouldn't have; **Wholesaler** users will have a field called "My Wholesaler"; and all users would have any fields that site admins wanted to keep private.
+But right away I see a problem with the OOTB configuration: on the Manage Fields page (`/admin/config/people/accounts/fields`) I can add fields... but any fields I add will be attached to _all users_. This is not ideal, and without a way of limiting field visibility it would create a mess: **Distributor** users would have a field called "My Distributors", which they shouldn't have; **Wholesaler** users will have a field called "My Wholesaler"; and all users would have any fields that site admins wanted to keep private. We can easily fix this by individually setting permissions on each of these fields.
 
 ### _Widget nodes_
 
