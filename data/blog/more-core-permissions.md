@@ -2,7 +2,7 @@
 title: More Core Permission Configuration Ideas
 subtitle: Continuing to explore advanced permission configurations that rely solely on Drupal Core
 date: '2023-05-29'
-tags: ['php', 'drupal']
+tags: ['php', 'drupal', 'permissions']
 draft: false
 summary: In the spirit of seeing how much functionality we can squeeze out of a D9/10 Core install, here are some more use cases where permissions could be tweaked in creative and/or advanced ways.
 image: []

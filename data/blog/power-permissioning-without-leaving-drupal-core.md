@@ -2,7 +2,7 @@
 title: Power Permissioning Without Leaving Drupal Core
 subtitle: Taking the next step in setting up a customized multi-tiered permission system in Drupal 10
 date: '2023-05-28'
-tags: ['php', 'drupal']
+tags: ['php', 'drupal', 'permissions']
 draft: false
 summary: Building on Drupal Core's OOTB permission options from the last article, let's go a little further this time. But let's stay in the Core box and look at a combination of modules that are included in Drupal 10 Core, but which are not enabled in an OOTB install - Content Moderation and Workflows.
 images: []

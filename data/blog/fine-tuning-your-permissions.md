@@ -2,7 +2,7 @@
 title: Fine Tuning Your Permissions in Drupal
 subtitle: You can get as granular as you need, often without any custom modules
 date: '2023-05-27'
-tags: ['php', 'drupal']
+tags: ['php', 'drupal', 'permissions']
 draft: false
 summary: One of Drupal's strengths is its permissioning system. Out of the box, you can set up a tiered permission system pretty easily with, for example, authors, editors, approvers, and of course anonymous users who can read the site and not much else.
 images: []
