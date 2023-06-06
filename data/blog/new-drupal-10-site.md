@@ -2,14 +2,14 @@
 title: Spinning Up a New Drupal 10 Site in Under 5 Minutes, Part One
 subtitle: Painless way to get started with an out-of-the-box site in your local environment
 date: '2023-06-06'
-tags: ['php']
+tags: ['drupal', 'basics']
 draft: false
-summary: 'This has been my go-to method for a couple of years now. Hopefully it will work as smoothly for you as it does for me.'
+summary: 'Creating a new Drupal site in a local dev environment can be quick and painless, or it can probably be a super-complex and intimidating endeavor. I will demonstrate my personal recipe, of the "quick-and-painless" variety, which has been my go-to method for a couple of years now. Hopefully it will work as smoothly for you as it does for me.'
 images: []
 layout: PostLayout
 ---
 
-Creating a new Drupal site in a local dev environment can be quick and painless, or it can probably be a super-complex and intimidating endeavor. I'm going to demonstrate my version option A: a quick and painless set of steps that has been my go-to method for a couple of years now. Hopefully it will work as smoothly for you as it does for me.
+Creating a new Drupal site in a local dev environment can be quick and painless, or it can probably be a super-complex and intimidating endeavor. I will demonstrate my personal recipe, of the "quick-and-painless" variety, which has been my go-to method for a couple of years now. Hopefully it will work as smoothly for you as it does for me.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ DDEV is my weapon of choice for setting up Docker for Drupal. If you've never us
 
 I'm tired of using dumb project names like `my-drupal-site` or whatever, so my demo site is going to be called `the-great-catsby` because cats.
 
-**BTW** - the first 8 steps are taken directly from the [CMS Quickstarts](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal) section of DDEV's docs.
+_**BTW** - I didn't come up with these steps; they're taken directly from the [CMS Quickstarts](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal) section of DDEV's docs. I just added some explanatory notes. In the next article I'll add to these steps to give you what I consider to be an ideal D10 dev environment._\*
 
 ### 1) Make your directory
 
@@ -83,7 +83,7 @@ ddev drush uli
 
 "uli" is short for "user-login", one of Drush's oodles of happy and helpful commands that you'll probably memorize (along with `drush cr` which is permanently seared into my fingers' muscle memory. I'm pretty sure I've cleared caches in my dreams with `drush cr` a few times, and my fingers probably went through the motions of typing it.)
 
-### 8) Launch!
+### 8) Launch
 
 ```sh
 ddev launch
