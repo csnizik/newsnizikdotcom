@@ -41,7 +41,7 @@ This is your project root; it's where the `composer.json` and `composer.lock` fi
 ddev config --project-type=drupal10 --docroot=web --create-docroot
 ```
 
-This sets up the configuration for a Drupal 10 project, specifies that the web-accessible directory will be a subdirectory called `web`, and instructs DDEV to create this directory if it doesn't already exist.
+This sets up the configuration for a Drupal 10 project, specifies that the web-accessible directory will be a subdirectory called `web`, and instructs DDEV to create this directory if it doesn't already exist. (This is a Drupal architecture that, depending on how long it's been since you created a new site, may look unfamiliar to you. I will circle back to this in step 4 below.)
 
 ### 3) Start up your environment
 
