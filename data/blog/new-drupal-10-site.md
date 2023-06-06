@@ -23,7 +23,9 @@ DDEV is my weapon of choice for setting up Docker for Drupal. If you've never us
 
 I'm tired of using dumb project names like `my-drupal-site` or whatever, so my demo site is going to be called `the-great-catsby` because cats.
 
-_**BTW** - I didn't come up with these steps; they're taken directly from the [CMS Quickstarts](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal) section of DDEV's docs. I just added some explanatory notes. In the next article I'll add to these steps to give you what I consider to be an ideal D10 dev environment._\*
+![Obligatory and meaningless cat meme that adds nothing of value to the text](/static/images/catsbelike.gif)
+
+_**BTW** - I didn't come up with these steps; they're taken directly from the [CMS Quickstarts](https://ddev.readthedocs.io/en/latest/users/quickstart/#drupal) section of DDEV's docs. I just added some explanatory notes. In the next article I'll add to these steps to give you what I consider to be an ideal D10 dev environment._
 
 ### 1) Make your directory
 
