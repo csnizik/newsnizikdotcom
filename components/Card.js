@@ -16,8 +16,8 @@ const Card = ({ title, description, imgSrc, href }) => (
                 alt={title}
                 src={imgSrc}
                 className="absolute top-0 left-0 w-full object-cover object-center"
-                width={2000} // Original width but will scale based on parent
-                height={2000} // Original height but will scale based on parent
+                width={500} // Original width but will scale based on parent
+                height={500} // Original height but will scale based on parent
               />
             </Link>
           ) : (
@@ -25,8 +25,8 @@ const Card = ({ title, description, imgSrc, href }) => (
               alt={title}
               src={imgSrc}
               className="absolute top-0 left-0 w-full object-cover object-center"
-              width={2000} // Original width but will scale based on parent
-              height={2000} // Original height but will scale based on parent
+              width={500} // Original width but will scale based on parent
+              height={500} // Original height but will scale based on parent
             />
           )}
         </div>
