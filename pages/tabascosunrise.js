@@ -1,7 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
-import projectsData from '@/data/projectsData'
-import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
+import Card from '@/components/Card'
+import tsListingsData from '@/data/tsListingsData' // Ensure this path is correct
 
 export default function TabascoSunrise() {
   return (
@@ -10,29 +10,26 @@ export default function TabascoSunrise() {
         title={`Tabasco Sunrise - ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9  text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Tabasco Sunrise
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            One day, I'll fill this space with wonderful projects I've worked on. Until then, enjoy
-            these placeholders.
-          </p>
+      <div className="flex flex-col items-center justify-center py-10">
+        <img
+          src="/static/images/ts-logo-200x200.png"
+          alt="Tabasco Sunrise Logo"
+          className="w-200 h-200"
+        />
+      </div>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {tsListingsData.map((listing) => (
+            <Card
+              key={listing.id} // Assuming each listing has a unique 'id'
+              title={listing.title}
+              description={listing.description}
+              imgSrc={listing.imgSrc}
+              href={listing.href}
+              className="border-[#9b1b22] bg-[#057342] text-[#fcd23b] hover:bg-[#9b1b22] hover:text-white"
+            />
+          ))}
         </div>
-        {/* <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
-            {projectsData.map((d) => (
-              <Card
-                key={d.title}
-                title={d.title}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
-              />
-            ))}
-          </div>
-        </div> */}
       </div>
     </>
   )
