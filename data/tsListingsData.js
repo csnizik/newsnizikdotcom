@@ -32,7 +32,7 @@ const projectsData = [
   {
     title: `I'm Not Always...`,
     description: `Size: 149x 230 | 23,483 stitches | 1,572 backstitches | 48 colors`,
-    imgSrc: '/static/images/tslistings/shitshow-product-image-4d.png',
+    imgSrc: '/static/images/tslistings/notalways-product-image-4d.png',
     href: 'https://www.etsy.com/listing/1683546499/im-not-always-a-bitch-cross-stitch?click_key=d257e5dd1aee85de1b445a23713eab4d2a8941db%3A1683546499&click_sum=c35f5e35&ref=shop_home_active_5&pro=1',
   },
 ]
