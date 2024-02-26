@@ -2,14 +2,14 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
+  <div className="md p-4 md:w-1/2">
     <div
       className={`${
         imgSrc && 'h-full'
       } overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
     >
       {imgSrc && (
-        <div className="relative w-full" style={{ paddingTop: '100%' }}>
+        <div className="relative w-full pt-3">
           {' '}
           {/* Maintain 1:1 Aspect Ratio */}
           {href ? (
@@ -17,7 +17,7 @@ const Card = ({ title, description, imgSrc, href }) => (
               <Image
                 alt={title}
                 src={imgSrc}
-                className="absolute top-0 left-0 h-full w-full object-cover object-center"
+                className="absolute top-0 left-0 w-full object-cover object-center"
                 width={2000} // Original width but will scale based on parent
                 height={2000} // Original height but will scale based on parent
               />
@@ -26,7 +26,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             <Image
               alt={title}
               src={imgSrc}
-              className="absolute top-0 left-0 h-full w-full object-cover object-center"
+              className="absolute top-0 left-0 w-full object-cover object-center"
               width={2000} // Original width but will scale based on parent
               height={2000} // Original height but will scale based on parent
             />
