@@ -6,30 +6,35 @@ const Card = ({ title, description, imgSrc, href }) => (
     <div
       className={`${
         imgSrc && 'h-full'
-      }  overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
+      } overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
     >
-      {imgSrc &&
-        (href ? (
-          <Link href={href} aria-label={`Link to ${title}`}>
+      {imgSrc && (
+        <div className="relative w-full" style={{ paddingTop: '100%' }}>
+          {' '}
+          {/* Maintain 1:1 Aspect Ratio */}
+          {href ? (
+            <Link href={href} aria-label={`Link to ${title}`}>
+              <Image
+                alt={title}
+                src={imgSrc}
+                className="absolute top-0 left-0 h-full w-full object-cover object-center"
+                width={2000} // Original width but will scale based on parent
+                height={2000} // Original height but will scale based on parent
+              />
+            </Link>
+          ) : (
             <Image
               alt={title}
               src={imgSrc}
-              className="object-cover object-center md:h-36 lg:h-48"
-              width={544}
-              height={306}
+              className="absolute top-0 left-0 h-full w-full object-cover object-center"
+              width={2000} // Original width but will scale based on parent
+              height={2000} // Original height but will scale based on parent
             />
-          </Link>
-        ) : (
-          <Image
-            alt={title}
-            src={imgSrc}
-            className="object-cover object-center md:h-36 lg:h-48"
-            width={544}
-            height={306}
-          />
-        ))}
+          )}
+        </div>
+      )}
       <div className="p-6">
-        <h2 className="mb-3 text-2xl font-bold leading-8 ">
+        <h2 className="mb-3 text-2xl font-bold leading-8">
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
               {title}
