@@ -2,8 +2,10 @@ const projectsData = [
   {
     title: `Hippity Hoppity...`,
     description: `Size: 104 x 169 | 6,530 stitches | 2,418 backstitches | 20 colors`,
-    imgSrc: '/static/images/tslistings/hippity.avif',
+    imgSrc: '/static/images/tslistings/hippity.jpg',
     href: 'https://www.etsy.com/listing/1668242140/hippity-hoppity-get-off-my-property?click_key=aeee6eeb527ef310a70a2b8dd571dfab21809ab5%3A1668242140&click_sum=a2595f2a&ref=shop_home_feat_1&pro=1',
+    width: 350,
+    height: 350,
   },
   {
     title: 'Every Time...',
