@@ -47,5 +47,13 @@ const projectsData = [
     width: 350,
     height: 350,
   },
+  {
+    title: `Don't Worry`,
+    description: `Size: 112x 151 | 6,160 stitches | 1,677 backstitches | 45 colors`,
+    imgSrc: '/static/images/tslistings/dontworry.jpg',
+    href: 'https://www.etsy.com/listing/1682718455/dont-worry-this-is-my-second-rodeo-cross?click_key=1e966d93960646bfd015cbe3047c0a410f229746%3A1682718455&click_sum=ee8e44a4&ref=shop_home_active_10&pro=1',
+    width: 350,
+    height: 350,
+  },
 ]
 export default projectsData
