@@ -12,7 +12,7 @@ const projectsData = [
     href: 'https://www.etsy.com/listing/1671142496/every-time-i-stab-my-finger-cross-stitch?click_key=b36b91e46ca56ab20dbccdb8b76bb1509a78ae35%3A1671142496&click_sum=9db9b1c1&ref=shop_home_active_1&pro=1',
   },
   {
-    title: 'Every Time...',
+    title: 'I Will Not...',
     description: `Size: 139 x 151 | 14,036 stitches | 592 backstitches | 47 colors`,
     imgSrc: '/static/images/tslistings/iwillnot-product-image-4d.png',
     href: 'https://www.etsy.com/listing/1685107767/i-will-not-cross-stitch-pattern-pdf?click_key=30690da6fe0bf8252a2632a91daae60bb77955da%3A1685107767&click_sum=2a424835&ref=shop_home_active_2&pro=1',
