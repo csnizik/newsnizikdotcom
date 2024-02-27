@@ -55,5 +55,21 @@ const projectsData = [
     width: 350,
     height: 350,
   },
+  {
+    title: `WTF`,
+    description: `Size: 43 x 49 | 2,108 stitches | 286 backstitches | 3 colors`,
+    imgSrc: '/static/images/tslistings/wtf.jpg',
+    href: 'https://www.etsy.com/listing/1668219964/the-element-of-surprise-cross-stitch?click_key=2de242ff17051b1338455b6bd439919a0b93b5e3%3A1668219964&click_sum=a20be971&ref=shop_home_active_12&pro=1',
+    width: 350,
+    height: 350,
+  },
+  {
+    title: `Would Poop Here Again`,
+    description: `Size: 149 x 97 | 4,529 | 37 colors`,
+    imgSrc:
+      'https://www.etsy.com/listing/1666293880/would-poop-here-again-cross-stitch?click_key=0f1f9bb7e17711f08e1ff0d8fd39eb3db377c2f0%3A1666293880&click_sum=df9cae54&ref=shop_home_active_16&pro=1',
+    width: 350,
+    height: 350,
+  },
 ]
 export default projectsData
