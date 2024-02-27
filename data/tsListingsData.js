@@ -66,8 +66,8 @@ const projectsData = [
   {
     title: `Would Poop Here Again`,
     description: `Size: 149 x 97 | 4,529 | 37 colors`,
-    imgSrc:
-      'https://www.etsy.com/listing/1666293880/would-poop-here-again-cross-stitch?click_key=0f1f9bb7e17711f08e1ff0d8fd39eb3db377c2f0%3A1666293880&click_sum=df9cae54&ref=shop_home_active_16&pro=1',
+    imgSrc: '/static/images/tslistings/poop.jpg',
+    href: 'https://www.etsy.com/listing/1666293880/would-poop-here-again-cross-stitch?click_key=0f1f9bb7e17711f08e1ff0d8fd39eb3db377c2f0%3A1666293880&click_sum=df9cae54&ref=shop_home_active_16&pro=1',
     width: 350,
     height: 350,
   },
