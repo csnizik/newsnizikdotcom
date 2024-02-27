@@ -31,6 +31,8 @@ export default function TabascoSunrise() {
               description={listing.description}
               imgSrc={listing.imgSrc}
               href={listing.href}
+              width={320}
+              height={320}
               className="border-[#9b1b22] bg-[#057342] text-[#fcd23b] hover:bg-[#9b1b22] hover:text-white"
             />
           ))}

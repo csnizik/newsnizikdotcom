@@ -1,7 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, width, height }) => (
   <div className="md p-4">
     <div
       className={`overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
@@ -16,8 +16,8 @@ const Card = ({ title, description, imgSrc, href }) => (
                 alt={title}
                 src={imgSrc}
                 className="absolute top-0 left-0 w-full object-cover object-center"
-                width={500} // Original width but will scale based on parent
-                height={500} // Original height but will scale based on parent
+                width={width} // Original width but will scale based on parent
+                height={height} // Original height but will scale based on parent
               />
             </Link>
           ) : (
@@ -25,8 +25,8 @@ const Card = ({ title, description, imgSrc, href }) => (
               alt={title}
               src={imgSrc}
               className="absolute top-0 left-0 w-full object-cover object-center"
-              width={500} // Original width but will scale based on parent
-              height={500} // Original height but will scale based on parent
+              width={width} // Original width but will scale based on parent
+              height={height} // Original height but will scale based on parent
             />
           )}
         </div>
